@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CEO Dashboard</title>
+<link rel="stylesheet" href="/static/css/ceo.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <img src="/static/images/image.jpg" class="gov-logo" alt="Gov Logo">
+    <h2>CEO Dashboard</h2>
+</div>
+
+<div class="content">
+
+    <div class="card glass">
+        <h2>Document Viewer</h2>
+        <iframe src="/static/docs/sample.pdf"></iframe>
+    </div>
+
+    <div class="card glass">
+        <h2>All Comments (Engineer → Deputy → Finance)</h2>
+
+        <div id="commentHistory" class="comments-box"></div>
+    </div>
+
+    <div class="card glass">
+        <h2>Your Final Comment</h2>
+        <textarea id="commentInput" placeholder="Write your comment..."></textarea>
+        <button class="btn approve" onclick="approveFinal()">Approve</button>
+        <button class="btn reject" onclick="rejectFinal()">Reject</button>
+    </div>
+
+</div>
+
+<script src="/static/ceo_dashboard.js"></script>
+</body>
+</html>

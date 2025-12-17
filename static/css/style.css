@@ -1,0 +1,128 @@
+/* =====================================================
+   GLOBAL BACKGROUND WITH INDIAN EMBLEM
+   ===================================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: 
+        url("../static/images/india_emblem.png") no-repeat center 120px,
+        linear-gradient(to bottom, #ff9933 0%, #ffffff 50%, #138808 100%);
+    background-size: 270px, cover;
+    background-attachment: fixed;
+}
+
+/* =====================================================
+   CENTERED LOGIN CARD
+   ===================================================== */
+.login-container {
+    width: 360px;
+    margin: 160px auto;
+    padding: 30px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+
+    /* Card Shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    /* Animation */
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================================
+   HEADING
+   ===================================================== */
+.login-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Small subtext */
+.login-container h4 {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #333333;
+    font-weight: 500;
+}
+
+/* =====================================================
+   INPUT FIELDS
+   ===================================================== */
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* On Focus */
+input:focus {
+    border-color: #003366;
+    box-shadow: 0px 0px 6px rgba(0, 51, 102, 0.5);
+}
+
+/* =====================================================
+   LOGIN BUTTON
+   ===================================================== */
+button {
+    width: 90%;
+    padding: 12px;
+    margin-top: 15px;
+
+    background: #0033a0; /* Indian Navy Blue */
+    color: white;
+
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    background: #002266;
+}
+
+/* =====================================================
+   FOOTER TEXT
+   ===================================================== */
+.footer-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #003366;
+    font-weight: 500;
+}
+
+
+
+/* Pop-in animation */
+
+
+

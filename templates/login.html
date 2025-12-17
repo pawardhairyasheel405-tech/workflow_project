@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Government Workflow Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+ 
+
+
+<div class="login-container">
+
+    <h2>Government of India</h2>
+    <h4>Document Workflow Management System</h4>
+
+
+   {% if error %}
+<div class="error-box animate-pop"color="red">
+    {{ error }}
+</div>
+{% endif %}
+
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="Enter Username" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="footer-text">© 2025 | Ministry of e-Governance</div>
+</div>
+
+</body>
+</html>

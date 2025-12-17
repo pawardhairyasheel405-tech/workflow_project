@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Officer </title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}" />
+</head>
+<body>
+
+
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="logo">🇮🇳 Govdocument</h2>
+        <ul>
+            <li class="active">📄 View Document</li>
+            <li>💬 Comments</li>
+            <li>✔  Approval</li>
+            
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Top bar -->
+        <div class="topbar">
+            <h2>Engineer Department </h2>
+            <button class="logout">Logout</button>
+        </div>
+
+        <div class="content">
+
+            <!-- Document Viewer -->
+            <div class="card viewer">
+                <h3>Document Preview</h3>
+                <iframe src= "{{ url_for('static', filename='docs/sample.pdf') }}"class="pdf-viewer"></iframe>
+            </div>
+
+            <!-- Comments -->
+            <div class="card comments-box">
+                <h3>Comments</h3>
+
+                <div class="comment-list" id="commentList"></div>
+
+                <textarea id="commentInput" placeholder="Write your financial review..."></textarea>
+
+                <button class="btn add-btn" onclick="addComment()">Add Comment</button>
+                <button class="btn approve-btn" onclick="approveDoc()">Approve </button>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+
+</body>
+</html>
